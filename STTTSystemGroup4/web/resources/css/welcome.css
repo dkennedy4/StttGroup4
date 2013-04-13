@@ -1,0 +1,33 @@
+/*
+  These tags are for the welcome page also known as the index page of 
+  the Sttt system web app.
+*/
+
+section
+{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+article
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.welcomeStandH3
+{
+  display: block;
+  width: 20%;
+  background-color: #ff6666;
+}
+
+.welcomenetworkH3
+{
+  display: block;
+  width: 20%;
+  background-color: #3333ff;  
+}

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+  <h:head>
+    <title>Ignored</title>
+  </h:head>
+  <h:body>
+    <ui:composition>
+      <header>
+        <h1>Super Tic Tac Toe System</h1>
+        <div class="standalone">
+          <span>StandAlone Games</span>
+          <nav>
+            <h:outputLink value="playerVsAI.xhtml">
+              Player Vs AI
+            </h:outputLink>  
+          </nav>
+        </div>
+        <div class="network">
+          <span>Network Games</span>
+          <nav class="playerVsplayer">
+            <h:outputLink value="playerVsPlayer.xhtml">
+              Player Vs Player
+            </h:outputLink>
+            
+            <h:outputLink value="aiVsAi.xhtml">
+              AI Vs AI
+            </h:outputLink>  
+          </nav>               
+        </div>
+      </header>
+
+    </ui:composition>
+  </h:body>
+</html>
+

@@ -4,12 +4,14 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets">
   <h:head>
-    <title><ui:insert name="stttTitle"></ui:insert></title>
-    <ui:insert name="stttStyle"></ui:insert>
+    <title>Facelet Title</title>
   </h:head>
   <h:body>
-    STTT System
-    
+    <ui:composition template="/templates/STTTMasterLayout.xhtml">
+      <ui:define name="stttTitle">
+        Player Vs AI
+      </ui:define>
+    </ui:composition>
   </h:body>
 </html>
 

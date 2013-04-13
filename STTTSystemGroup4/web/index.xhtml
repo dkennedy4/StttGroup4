@@ -4,12 +4,42 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets">
   <h:head>
-    <title>Facelet Title</title>
+    <title>ignored</title>
   </h:head>
   <h:body>
-    <ui:composition>
+    <ui:composition template="/templates/STTTMasterLayout.xhtml">
       <ui:define name="stttTitle">
-        Welcome to STTT System
+        Super Tic Tac Toe System
+      </ui:define>
+      
+      <ui:define name="stttStyle">
+        <h:outputStylesheet library="css" name="welcome.css" />
+      </ui:define>
+      
+      <ui:define name="contentSection">
+        <section>
+          <h3><span class="welcomeStandH3">Standalone Mode Game</span></h3>
+          <article>
+            <strong>Player Vs AI</strong> <br />
+            Standalone mode offers only one game Player versus AI.
+            In this game mode a human player plays a number of odd matches
+            against STTT AI.
+          </article>
+        </section>
+        <section>
+          <h3><span class="welcomenetworkH3">Network Mode Games</span></h3>
+          <article>
+            <strong>Player Vs Player</strong> <br />
+            STTT Game option that allows a user to setup and play several odd
+            matches against another human opponent.
+          </article>
+          <br />
+          <article>
+            <strong>AI Vs AI</strong> <br />
+            Game Option designed for Software Engineering competition.  Used to
+            compete against an opponent Super Tic Tac Toe AI.
+          </article>
+        </section>
       </ui:define>
     </ui:composition>
   </h:body>
