@@ -1,0 +1,19 @@
+/*
+  These style rules are for the player vs ai section of the game.
+*/
+
+.subMenu
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  color: white;
+  padding: 5%;
+  
+}
+
+.subMenu h3
+{
+  text-align: center;
+  color: white;
+}

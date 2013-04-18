@@ -1,0 +1,44 @@
+
+.board
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+td a
+{
+  display: block;
+  width: 4em;
+  font-family: Geogia;
+  font-size: xx-large;
+  padding: 1em;
+  min-height: 2em;
+  max-height: 2em;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+td a:hover
+{
+  background-color: #3333ff;
+}
+
+td a:visited
+{
+  color: white;
+}
+
+.middleVertTd
+{
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+}
+
+.middleHorTd
+{
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;  
+}
+

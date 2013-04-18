@@ -1,0 +1,12 @@
+/*
+  These rules are specific to player Vs AI game page.
+*/
+
+.subMenu
+{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ff6666;
+  color: white;
+}

@@ -1,0 +1,12 @@
+/*
+  These style rules are used for the playerVsPlayer version of the game.
+*/
+
+.subMenu
+{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #3333ff;
+  color: white;
+}

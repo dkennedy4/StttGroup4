@@ -13,21 +13,15 @@
         <div class="standalone">
           <span>StandAlone Games</span>
           <nav>
-            <h:outputLink value="playerVsAI.xhtml">
-              Player Vs AI
-            </h:outputLink>  
+            <h:link value="Player Vs AI" outcome="playerVsAI" />
           </nav>
         </div>
         <div class="network">
           <span>Network Games</span>
           <nav class="playerVsplayer">
-            <h:outputLink value="playerVsPlayer.xhtml">
-              Player Vs Player
-            </h:outputLink>
+            <h:link value="Player Vs Player" outcome="playerVsPlayer" />
             
-            <h:outputLink value="aiVsAi.xhtml">
-              AI Vs AI
-            </h:outputLink>  
+            <h:link value="AI Vs AI" outcome="aiVsAI" />
           </nav>               
         </div>
       </header>
