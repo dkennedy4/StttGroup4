@@ -2,7 +2,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:ui="http://java.sun.com/jsf/facelets">
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
   <h:head>
     <title>Ignored</title>
   </h:head>
@@ -10,20 +11,28 @@
     <ui:composition>
       <header>
         <h1>Super Tic Tac Toe System</h1>
-        <div class="standalone">
-          <span>StandAlone Games</span>
-          <nav>
-            <h:link value="Player Vs AI" outcome="playerVsAI" />
-          </nav>
-        </div>
-        <div class="network">
-          <span>Network Games</span>
-          <nav class="playerVsplayer">
-            <h:link value="Player Vs Player" outcome="playerVsPlayer" />
-            
-            <h:link value="AI Vs AI" outcome="aiVsAI" />
-          </nav>               
-        </div>
+        <h:form>
+          <div class="standalone">
+            <span>StandAlone Games</span>
+            <nav>
+              <h:commandLink value="Player Vs AI" action="#{game.selectGame()}">
+                <f:setPropertyActionListener target="#{game.gameMode}" value="PlayerVsAI" />
+              </h:commandLink>
+            </nav>
+          </div>
+          <div class="network">
+            <span>Network Games</span>
+            <nav class="playerVsplayer">
+              <h:commandLink value="Player Vs Player" action="#{game.selectGame()}" >
+                <f:setPropertyActionListener target="#{game.gameMode}" value="PlayerVsPlayer" />
+              </h:commandLink> 
+
+              <h:commandLink value="AI Vs AI" action="#{game.selectGame()}">
+                <f:setPropertyActionListener target="#{game.gameMode}" value="AIVsAI" />
+              </h:commandLink>
+            </nav>               
+          </div>
+        </h:form>  
       </header>
 
     </ui:composition>

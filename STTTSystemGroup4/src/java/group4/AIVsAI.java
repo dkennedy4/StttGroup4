@@ -8,8 +8,13 @@ package group4;
  *
  * @author Tresspasser
  */
-
-public class StttBoard 
+public class AIVsAI extends StttGame
 {
+  public AIVsAI(){}
   
+  @Override
+  public String toString()
+  {
+    return "AIVsAI";
+  }
 }
