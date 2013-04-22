@@ -41,27 +41,26 @@ public class StttServer implements Serializable{
   
   public String selectGame()
   {
-    String myGame = "index";
+    String myGame;
     switch (gameMode)
     {
       case PlayerVsPlayer:
-        myGame = "playerVsPlayer";
+//        myGame = "playerVsPlayer";
         game = new PlayerVsPlayer();
         break;
       case PlayerVsAI:
-        myGame = "playerVsAI";
+//        myGame = "playerVsAI";
         game = new PlayerVsAI();
         break;
       case AIVsAI:
-        myGame = "aiVsAI";
+//        myGame = "aiVsAI";
         game = new AIVsAI();
         break;
       default:
         break;
     }
 
-    System.out.println(game);
-    System.out.println(game.getName());
+    myGame = game.getName();
     return myGame;
   }
    

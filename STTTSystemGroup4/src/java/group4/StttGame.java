@@ -8,15 +8,12 @@ package group4;
  *
  * @author Tresspasser
  */
-public class StttGame 
+public abstract class StttGame 
 {
   public StttGame(){}
   
   
-  public String getName()
-  {
-    return "my Name";
-  }
+  public abstract String getName();
   
   @Override
   public String toString()

@@ -13,6 +13,12 @@ public class AIVsAI extends StttGame
   public AIVsAI(){}
   
   @Override
+  public String getName()
+  {
+    return "aivsai";
+  }  
+  
+  @Override
   public String toString()
   {
     return "AIVsAI";

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
+  <h:head>
+    <title>Ignored</title>
+  </h:head>
+  <h:body>
+    <ui:composition template="/templates/STTTMasterLayout.xhtml">
+      <ui:define name="stttTitle">
+        AI Vs AI
+      </ui:define>
+      
+      <ui:define name="stttStyle">
+        <h:outputStylesheet library="css" name="stttBoard.css" />
+        <h:outputStylesheet library="css" name="playerVsPlayer.css" />
+      </ui:define>
+      
+
+      
+      <ui:define name="contentSection">
+       <h:panelGroup>
+          <h:form class="subMenu">
+            
+            <h3>AI Vs AI</h3>  
+            Select the Number of Matches to Play:
+            <h:selectOneMenu >
+              <f:selectItem itemValue="1" itemLabel="1 Match" />
+              <f:selectItem itemValue="3" itemLabel="3 Matches" />
+              <f:selectItem itemValue="5" itemLabel="5 Matches" />
+            </h:selectOneMenu>
+            STTT AI Id:
+            <h:inputText size="8"/>
+
+            Challenger Id:
+            <h:inputText size="8"/>
+            
+            Time Limit:
+            <h:selectOneMenu>
+              <f:selectItem itemValue="30" itemLabel="30 s" />
+              <f:selectItem itemValue="45" itemLabel="45 s" />
+              <f:selectItem itemValue="60" itemLabel="60 s" />
+              <f:selectItem itemValue="90" itemLabel="90 s" />
+            </h:selectOneMenu>
+              
+           
+            <h:commandButton value="Start Game"  />
+            Time: 
+            <h:inputText disabled="true" size="4"/>            
+          </h:form>
+        </h:panelGroup>        
+            
+        <ui:include src="/templates/STTTBoard.xhtml" />
+      </ui:define>       
+    </ui:composition>
+  </h:body>
+</html>
+

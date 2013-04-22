@@ -11,5 +11,15 @@ package group4;
 
 public class StttBoard 
 {
+  public StttBoard()
+  {}
+  
+  @Override
+  public String toString()
+  {
+    return "StttBoard " + board.length;
+  }
+  
+  private Character[][] board = new Character[3][3];
   
 }

@@ -21,6 +21,12 @@ public class PlayerVsPlayer extends StttGame implements Serializable
   public PlayerVsPlayer(){}
   
   @Override
+  public String getName()
+  {
+    return "playervsplayer";
+  }
+  
+  @Override
   public String toString()
   {
     return "PlayerVsPlayer";

@@ -18,6 +18,14 @@ public class PlayerVsAI extends StttGame implements Serializable
 
   public PlayerVsAI(){}
   
+  
+  
+  @Override
+  public String getName()
+  {
+    return "playervsai";
+  }
+  
   @Override
   public String toString()
   {
