@@ -11,75 +11,77 @@
     <ui:composition>
       <h:panelGroup>
         <h:form>
+          <div class="stats">
+            Player Score: <h:outputText value=""/>
+            <br />
+            Opponent Score: <h:outputText value=""/>
+            <br />
+            Turn: <h:outputText value=""/>
+            <br />
+            Match# <h:outputText value=""/>
+            <br />
+            Round# <h:outputText value=""/>
+          </div>
           <table class="board">
             <tr>
               <td>
-                <h:commandButton value="" 
-                               disabled="#{!game.enabled}" 
+                <h:commandLink value="" 
                                action="#{game.selectMove()}">
                   <f:setPropertyActionListener target="#{game.move}" 
                                                value="1" />
-                </h:commandButton>
+                </h:commandLink>
               </td>
               <td class="middleVertTd">
-                <h:commandButton value="" 
-                               disabled="#{!game.enabled}" 
+                <h:commandLink value="" 
                                action="#{game.selectMove()}">
                   <f:setPropertyActionListener target="#{game.move}" value="2" />
-                </h:commandButton>
+                </h:commandLink>
               </td>
               <td>
-                <h:commandButton value="" 
-                               disabled="#{!game.enabled}"  
+                <h:commandLink value=""  
                                action="#{game.selectMove()}">
                   <f:setPropertyActionListener target="#{game.move}" value="3" />   
-                </h:commandButton>
+                </h:commandLink>
               </td>
             </tr>
             <tr>
               <td class="middleHorTd">
-                <h:commandButton value="" 
-                                 disabled="#{!game.enabled}"  
+                <h:commandLink value=""  
                                  action="#{game.selectMove()}">
                   <f:setPropertyActionListener target="#{game.move}" value="4" /> 
-                </h:commandButton>
+                </h:commandLink>
               </td>
               <td class="middleVertTd middleHorTd">
-                <h:commandButton value="" 
-                                 disabled="#{!game.enabled}" 
+                <h:commandLink value="" 
                                  action="#{game.selectMove()}">
                   <f:setPropertyActionListener target="#{game.move}" value="5" />
-                </h:commandButton>
+                </h:commandLink>
               </td>
               <td class="middleHorTd">
-                <h:commandButton value=""
-                                 disabled="#{!game.enabled}" 
+                <h:commandLink value="" 
                                  action="#{game.selectMove()}">
                   <f:setPropertyActionListener target="#{game.move}" value="6" />   
-                </h:commandButton>
+                </h:commandLink>
               </td>
             </tr>
             <tr>
               <td>
-                <h:commandButton value=""
-                                 disabled="#{!game.enabled}" 
+                <h:commandLink value=""
                                  action="#{game.selectMove()}">
                   <f:setPropertyActionListener target="#{game.move}" value="7" />
-                </h:commandButton>
+                </h:commandLink>
               </td>
               <td class="middleVertTd">
-                <h:commandButton value=""
-                                 disabled="#{!game.enabled}" 
+                <h:commandLink value=""
                                  action="#{game.selectMove()}">
                   <f:setPropertyActionListener target="#{game.move}" value="8" />  
-                </h:commandButton>
+                </h:commandLink>
               </td>
               <td>
-                <h:commandButton value=""
-                                 disabled="#{!game.enabled}" 
+                <h:commandLink value=""
                                  action="#{game.selectMove()}">
                   <f:setPropertyActionListener target="#{game.move}" value="9" />   
-                </h:commandButton>
+                </h:commandLink>
               </td>
             </tr>
           </table>

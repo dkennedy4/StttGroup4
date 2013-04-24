@@ -6,24 +6,6 @@
   width: 40%;
 }
 
-td input
-{
-  width: 6em;
-  font-family: Geogia;
-  font-size: xx-large;
-  height: 4em;
-  background-color: #666;
-  border-style: none;
-/*  border-color: #666;*/
-  text-align: center;
-  color: white;  
-  box-shadow: none; 
-}
-
-td input:hover
-{
-  background-color: #3333ff;  
-}
 
 td a
 {
@@ -61,3 +43,10 @@ td a:visited
   border-bottom: 4px solid white;  
 }
 
+.stats
+{
+  color: white;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
