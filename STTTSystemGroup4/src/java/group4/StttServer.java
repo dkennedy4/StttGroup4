@@ -41,31 +41,51 @@ public class StttServer implements Serializable{
   
   public String selectGame()
   {
-    String myGame;
+    String myGame = "index";
     switch (gameMode)
     {
       case PlayerVsPlayer:
-//        myGame = "playerVsPlayer";
         game = new PlayerVsPlayer();
         break;
       case PlayerVsAI:
-//        myGame = "playerVsAI";
         game = new PlayerVsAI();
         break;
       case AIVsAI:
-//        myGame = "aiVsAI";
         game = new AIVsAI();
         break;
       default:
         break;
     }
 
-    myGame = game.getName();
-    return myGame;
+    return game.getName();
+  }
+
+  public int getMove() 
+  {
+    return move;
+  }
+
+  public void setMove(int move) 
+  {
+    this.move = move;
+    System.out.println(move);
   }
    
+  public void selectMove()
+  {
+   game.playMove(move);
+   gameBoard = game.board;
+  }
+
+  public boolean isEnabled() {
+    return enabled;
+  }
+
+  public void setEnabled(boolean enabled) {
+    this.enabled = enabled;
+  }
    
-  
+ 
   public enum GameType {PlayerVsPlayer, PlayerVsAI, AIVsAI}
   
   private GameType gameMode;
@@ -74,5 +94,10 @@ public class StttServer implements Serializable{
   
   private StttGame game;
  
+  private boolean enabled = false;
+  
+  private StttBoard gameBoard;
+  private int move;
+  
 }
  

@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package group4;
 
 
@@ -10,7 +6,7 @@ import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 /**
  *
- * @author Tresspasser
+ * @author David Kennedy
  */
 
 @Named(value = "PVsP")
@@ -20,6 +16,23 @@ public class PlayerVsPlayer extends StttGame implements Serializable
   
   public PlayerVsPlayer(){}
   
+  
+  
+  /**
+   * Adds a move for player to board
+   * 
+   * @param move
+   */
+  @Override
+  public void playMove(int move)
+  {
+    System.out.println("PlayerVsPlayer" + move);
+  }
+  
+  /**
+   * 
+   * @return a string with the value name of the game mode 
+   */
   @Override
   public String getName()
   {
@@ -30,6 +43,12 @@ public class PlayerVsPlayer extends StttGame implements Serializable
   public String toString()
   {
     return "PlayerVsPlayer";
+  }
+
+  @Override
+  public boolean enableBoard() 
+  {
+    throw new UnsupportedOperationException("Not supported yet.");
   }
   
 }
